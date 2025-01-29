@@ -50,8 +50,8 @@ const Hero = () => {
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
           {ImageList.map((data) => (
-            <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2">
+            <div >
+              <div className="grid grid-cols-1 sm:grid-cols-2" key={data.id}>
                 {/* text content section */}
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
                   <h1
