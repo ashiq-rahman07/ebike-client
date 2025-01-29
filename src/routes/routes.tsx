@@ -3,6 +3,9 @@ import App from "../App";
 import About from "../pages/About";
 import Product from "../pages/Product";
 import Home from "../pages/Home";
+import SignUp from "../components/register/SignUp";
+import SignIn from "../components/register/SignIn";
+import Dashboard from "../components/dashbord/Dashboard";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
                 path:'/product',
                 element:<Product/>,
             },
+            {
+                path:'/signup',
+                element:<SignUp/>,
+            },
+            {
+                path:'/signin',
+                element:<SignIn/>,
+            },
+            {
+                path:'/dashboard',
+                element:<Dashboard/>,
+            },
         ]
 
     },
@@ -30,7 +45,7 @@ const router = createBrowserRouter([
 
 
     // },
-    // {
+    // {roduct
     //     path:'/about',
     //     element:<About/>
 
